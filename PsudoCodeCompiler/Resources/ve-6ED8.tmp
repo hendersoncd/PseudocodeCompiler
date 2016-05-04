@@ -1,0 +1,44 @@
+
+	void	sayHelloMethod ( string  name)
+		print "Hello there, "
+		print name
+	return
+	
+Start
+	num myNumber
+	num myNumber2 = 123
+	string myName
+	
+	myName = "Chris Henderson"
+	print myName
+	
+	sayHelloMethod(myName)
+	
+	print "Hello World!"
+	
+	myNumber = 1
+	print myNumber
+	
+	myNumber2 = 321
+	print myNumber2
+	
+	myNumber = (myNumber + myNumber2) * 2
+	print myNumber
+	
+	if myNumber == 1 then
+		print "True"
+	elseif myNumber > 1 then
+		print "You should see this."
+	else
+		print "False"
+	endif
+	
+	myNumber = 0
+	while myNumber < 10
+		myNumber = myNumber + 1
+		print myNumber
+	endWhile
+	
+	print myNumber, myNumber2
+	print "End of the line"
+Stop

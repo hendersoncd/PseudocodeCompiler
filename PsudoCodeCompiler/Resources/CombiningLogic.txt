@@ -1,0 +1,26 @@
+# Combining Logic
+#
+# This example demonstrates the syntax for combining logical statements using the Boolean
+# logic operations of AND, OR and NOT. 
+#
+
+# The Main Program Starts Here
+Main
+	# Set the number variable to an arbitrary value
+	# Change these to anything to test how the code works
+	rating = "R"
+	customerAge = 21
+	
+	# statements can be combined on one line
+	if rating == "R" AND customerAge < 18 then
+		print "Too Young for R Rated Movies"
+		
+	# or statements can span multiple lines
+	elseif rating == "PG-13" 
+	AND customerAge < 13 then
+		print "Must Have Parent for PG-13 Rated Movies"
+	else
+		print "Sell Approved"
+	endif
+	
+End

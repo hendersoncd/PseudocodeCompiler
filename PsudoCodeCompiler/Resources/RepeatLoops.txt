@@ -1,0 +1,17 @@
+# Looping - Repeat Loops
+#
+# This is a simple example of while loops, or post-condiditon loops.
+#
+
+# The Main Program Starts Here
+Main
+	
+	number = 0
+	
+	# this will count from 1 to 10
+	repeat
+		number = number + 1
+		print number
+	until number < 10
+
+End

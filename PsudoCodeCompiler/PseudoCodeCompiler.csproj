@@ -1,0 +1,252 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{430A3FC5-7F51-4004-9957-97E859477299}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PseudoCodeCompiler</RootNamespace>
+    <AssemblyName>PseudoCodeCompiler</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ApplicationIcon>idr_dll.ico</ApplicationIcon>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutBox.Designer.cs">
+      <DependentUpon>AboutBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Compiler\CompileError.cs" />
+    <Compile Include="Compiler\Enums.cs" />
+    <Compile Include="Compiler\PsudoCodeScanner.cs" />
+    <Compile Include="Compiler\PsudoMethodInfo.cs" />
+    <Compile Include="Compiler\PsudoVariableInfo.cs" />
+    <Compile Include="ExpressionTree\ExpressionNode.cs" />
+    <Compile Include="ExpressionTree\ExpressionOperator.cs" />
+    <Compile Include="ExpressionTree\ExpressionParser.cs" />
+    <Compile Include="ExpressionTree\ExpressionTree.cs" />
+    <Compile Include="FlowChart\FlowChartItemControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FlowChart\FlowChartItemControl.Designer.cs">
+      <DependentUpon>FlowChartItemControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FlowChart\FlowChartPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FlowChart\FlowChartPanel.Designer.cs">
+      <DependentUpon>FlowChartPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FlowChart\FlowChartViewerControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FlowChart\FlowChartViewerControl.Designer.cs">
+      <DependentUpon>FlowChartViewerControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KeyboardHooks.cs" />
+    <Compile Include="linenum_rtf.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ObjectSelectionDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ObjectSelectionDialog.Designer.cs">
+      <DependentUpon>ObjectSelectionDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OptionsDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OptionsDialog.Designer.cs">
+      <DependentUpon>OptionsDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AboutBox.resx">
+      <DependentUpon>AboutBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FlowChart\FlowChartViewerControl.resx">
+      <DependentUpon>FlowChartViewerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ObjectSelectionDialog.resx">
+      <DependentUpon>ObjectSelectionDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OptionsDialog.resx">
+      <DependentUpon>OptionsDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PsudoRuntimeViewer.resx">
+      <DependentUpon>PsudoRuntimeViewer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StringInputDialog.resx">
+      <DependentUpon>StringInputDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="PsudoRuntimeViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PsudoRuntimeViewer.Designer.cs">
+      <DependentUpon>PsudoRuntimeViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Runtime\Instructions\AbstractAssignmentInstruction.cs" />
+    <Compile Include="Runtime\Instructions\AssignVariable.cs" />
+    <Compile Include="Runtime\Instructions\BlockInstruction.cs" />
+    <Compile Include="Runtime\Instructions\CallMethodInstruction.cs" />
+    <Compile Include="Runtime\Instructions\CreateLocalVariable.cs" />
+    <Compile Include="Runtime\Instructions\DecisionInstruction.cs" />
+    <Compile Include="Runtime\Instructions\DoLoopInstruction.cs" />
+    <Compile Include="Runtime\Instructions\ForLoopInstruction.cs" />
+    <Compile Include="Runtime\Instructions\InstructionFactory.cs" />
+    <Compile Include="Runtime\Instructions\MathmaticAssignmentInstruction.cs" />
+    <Compile Include="Runtime\Instructions\NoOpInstruction.cs" />
+    <Compile Include="Runtime\Instructions\PrintInstruction.cs" />
+    <Compile Include="Runtime\Instructions\PromptInstruction.cs" />
+    <Compile Include="Runtime\Instructions\PsudoInstruction.cs" />
+    <Compile Include="Runtime\Instructions\ReadInstruction.cs" />
+    <Compile Include="Runtime\Instructions\ReturnInstruction.cs" />
+    <Compile Include="Runtime\Instructions\WhileLoopInstruction.cs" />
+    <Compile Include="Runtime\PsudoClass.cs" />
+    <Compile Include="Compiler\PsudoClassInfo.cs" />
+    <Compile Include="Compiler\PsudoCompiler.cs" />
+    <Compile Include="Runtime\PsudoCodeBlock.cs" />
+    <Compile Include="Runtime\PsudoMethod.cs" />
+    <Compile Include="Runtime\PsudoProgram.cs" />
+    <Compile Include="StringInputDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StringInputDialog.Designer.cs">
+      <DependentUpon>StringInputDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SyntaxHighlightingTextbox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SampleCode.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SimpleCode.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\openfolderHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\saveHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SaveAllHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SimpleMath.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SimpleInput.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HelloWorld.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Decisions.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Resources\RevisionHistory.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Arrays.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Case.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Looping.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NestedDecisions.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CombiningLogic.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="idr_dll.ico" />
+    <Content Include="Resources\CombiningDecisions.txt" />
+    <None Include="Resources\TwoDimArrays.txt" />
+    <None Include="Resources\DataFileExample.txt" />
+    <None Include="Resources\RepeatLoops.txt" />
+    <None Include="Resources\CountingLoops.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Runtime\RuntimeProperties\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

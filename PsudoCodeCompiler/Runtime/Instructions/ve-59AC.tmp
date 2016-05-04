@@ -1,0 +1,43 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace PsudoCodeCompiler.Runtime.Instructions
+{
+    class CallMethodInstruction : PsudoInstruction
+    {
+        string methodName;
+        public List<string> Arguments {get; set;}
+
+        public CallMethodInstruction(int lineNumber, PsudoMethod method, string methodName)
+            : base(lineNumber, method)
+        {
+            this.methodName = methodName;
+            this.Arguments = new List<string>();
+        }
+
+        public override PsudoInstruction Run()
+        {
+            PsudoMethod method = this.Method.GetMethod(this.methodName);
+            method.Program = this.Method.Program;
+            this.Method.Program.callStack.Push(method);
+            for(int i = 0; i < Arguments.Count; i++)
+            {
+                method.LocalVariables.Add(method.ArgumentNames[i], this.Method.GetVariable(Arguments[i]));
+                if (method.ArgumentTypes[i] == "num" && method.GetVariable(method.ArgumentNames[i]) is string)
+                {
+                    method.SetVariable(method.ArgumentNames[i], Convert.ToDouble(Arguments[i]));
+                }
+                else if (method.ArgumentTypes[i] == "string" && method.GetVariable(method.ArgumentNames[i]) is double)
+                {
+                    method.SetVariable(method.ArgumentNames[i], this.Method.GetVariable(Arguments[i]).ToString());
+                }
+            }
+            method.Run(this.Method.Program);
+
+            this.Method.Program.callStack.Pop();
+            return null;
+        }
+    }
+}

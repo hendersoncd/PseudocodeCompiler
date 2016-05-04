@@ -1,0 +1,11 @@
+obj
+bin
+x86
+x64
+amd64
+*.suo
+*.sdf
+*.opensdf
+*.user
+Debug
+Release

@@ -1,0 +1,24 @@
+# Decisions - Case Statement
+#
+# This simple program shows how to make slightly more complex decisions in your code that involve
+# more than one path based on a single variable. 
+#
+
+# The Main Program Starts Here
+Main
+	#Set a variable to a value
+	myNumber = 3
+	
+	# a simple case example selecting text output based on the value of myNumber
+	case of myNumber
+		0: print "It's Zero"
+		1: print "It's One"
+		2: print "It's Two"
+		3: print "It's Three"
+		4: print "It's Four"
+		5: print "It's Five"
+		other: print "Something Else"
+	endcase
+	
+	
+End

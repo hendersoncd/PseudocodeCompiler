@@ -1,0 +1,15 @@
+# Hello World
+#
+# The is every coders first program. This program simply outputs Hello World to the 
+# console a few times.
+# As with all the examples a variety of ways are shown to do the same operations.
+#
+
+# The Main Program Starts Here
+Main
+	print "Hello World!"
+	write "Hello World!"
+	output "Hello World!"
+	put "Hello World!"
+	display "Hello World!"
+End

@@ -1,0 +1,20 @@
+Main
+     # Create a Multiplication Table from 1 to 10
+     Length = 10
+     
+     # outer loop used for each row
+     do row = 1 to Length
+          #inner loop used for each column
+          do column = 1 to Length
+               #calculate and save the product
+               table(row, column) = row * column
+          enddo
+     enddo
+     
+     # use the same structure to print the table
+     do row = 1 to Length
+          do column = 1 to Length
+               print row, " * ", column, " = ", table(row, column)
+          enddo
+     enddo
+End

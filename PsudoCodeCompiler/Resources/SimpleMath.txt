@@ -1,0 +1,32 @@
+# Simple Math Example
+#
+# This program shows the basics of performing mathmatic operations 
+# and displaying results to the user. As with all the examples a variety
+# of ways are shown to do the same operations.
+#
+
+# The Main Program Starts Here
+Main
+	set number to 1
+	total = 10
+	print "Starting Values: ", number, total
+	
+	add number to total
+	number = number + 2
+	print "After Adding Values: ", number, total
+	
+	subtract number from total
+	number = number - 1
+	print "After Subtracting Values: ", number, total
+	
+	divide total by number
+	number = number / 2
+	print "After Divide Values: ", number, total
+	
+	multiply total by number
+	number = number * 5
+	print "After Multiply Values: ", number, total
+End
+	
+	
+	

@@ -1,0 +1,23 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" ctype="Workspace" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="PsudoCodeCompiler/KeyboardHooks.cs" ctype="Workbench">
+    <Files>
+      <File FileName="PsudoCodeCompiler/KeyboardHooks.cs" Line="24" Column="4" />
+      <File FileName="PsudoCodeCompiler/Program.cs" Line="17" Column="3" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State expanded="True">
+          <Node name="PseudoCodeCompiler" expanded="True">
+            <Node name="Runtime" expanded="True" />
+            <Node name="KeyboardHooks.cs" selected="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches ctype="PinnedWatchStore" />
+</Properties>

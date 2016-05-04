@@ -1,0 +1,31 @@
+Main
+	numberArray(1) = 123
+	print numberArray(1)
+	numberArray(2) = numberArray(1) + 2
+	print numberArray(2)
+	
+	if numberArray(1) > 50 then
+		print "Should see this"
+	else
+		print "Should not see this"
+	endif
+	
+	Length = 9
+	DO index = 1 TO Length
+		doubles(index) = index * 2
+		squares(index) = index * index
+	ENDDO
+	
+	print "Doubles Table"
+	print "X  X+X"
+	DO index = 1 TO Length
+		print index, doubles(index)
+	ENDDO
+	
+	print "Sqaures Table"
+	print "X  X*X"
+	DO index = 1 TO Length
+		print index, squares(index)
+	ENDDO
+	
+End

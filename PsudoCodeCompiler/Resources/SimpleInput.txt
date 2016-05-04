@@ -1,0 +1,21 @@
+# Simple Input Example
+#
+# This program shows the basics of working with active user input. 
+# As with all the examples a variety of ways are shown to do the same operations.
+#
+
+# The Main Program Starts Here
+Main
+	prompt for userName
+	get userName
+	
+	print "Hello ", userName, "!"
+	
+	prompt for userAge
+	multiply userAge by 12
+	
+	print "You are ", userAge, " months old."
+End
+	
+	
+	

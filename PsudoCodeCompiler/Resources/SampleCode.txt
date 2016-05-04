@@ -1,0 +1,7 @@
+Main
+	#This is a comment
+	prompt for myNumber
+	if myNumber == 10 then
+		print "Its 10"
+	endif
+End

@@ -1,0 +1,210 @@
+        
+        ***** Revision History *****
+-------------------------------------------------
+1.1 Build 7				04/06/2011
+-------------------------------------------------
+ - Fixed array assignment issue (fixed "broken" example code)
+ - Updated about box
+
+-------------------------------------------------
+1.1 Build 6				03/20/2011
+-------------------------------------------------
+ - Fixed Hotkey lockdown issue
+ - Fixed backspacing tabs issue. Only requires one kestroke to delete
+ - Added line numbers beside the code editor and on the runtime viewer
+ - Added multi-line selection tabbing and shift-tabbing
+ - Prompts for save prior to compilation
+ - Prompts for save prior to opening new file
+ - Optimized runtime to make 0 delay run faster
+ - Added debug environment disabling option
+ 
+-------------------------------------------------
+1.1 Build 5				03/15/2011
+-------------------------------------------------
+ - Fixed handling of assignment statement without spaces
+ - Improved expression syntax checking
+ - Implemented entire record reading capability
+ - Fixed issue with case statements whithout other: options
+ - Fixed string comparison with spaces issue
+ - Implemented string concatenation assignment
+ - fixed DOWHILE syntax issue
+ - Implemented hotkeys 
+	- CTRL+S = Save
+	- CTRL+X = Cut
+	- CTRL+C = Copy
+	- CTRL+V = Paste
+	- CTRL+Y = Redo
+	- CTRL+Z = Undo
+	- F5 = Run
+ - Fixed compile error with counted loops within while loops
+ 
+-------------------------------------------------
+1.1 Build 4				02/17/2011
+-------------------------------------------------
+ - Fixed "WHILE NOT EOF" problem
+ 
+-------------------------------------------------
+1.1 Build 3				02/15/2011
+-------------------------------------------------
+ - Added font selection to options dialog
+ - Added prompting to the standard output text
+ - Added preset configurations to the options dialog
+
+-------------------------------------------------
+1.1 Build 2				02/8/2011
+-------------------------------------------------
+ - Added AND, OR, NOT and EOF to highlighted keywords list
+ - Fixed EOF handling for input files
+ - Fixed display issues with prompt and decision nodes
+ - Implemented case indifferent string comparisons
+ - Added True/False labels for decisions in flowcharts
+
+-------------------------------------------------
+1.1 Build 1				02/6/2011
+-------------------------------------------------
+ - Implemented Flowchart View of Programs
+ - Removed code to set variable pane invisible
+ - Improved variable naming errors
+
+-------------------------------------------------
+1.0 Build 18			02/1/2011
+-------------------------------------------------
+ - Fixed Title Bar Name Mispelling
+ - Fixed handling of AND, OR and NOT keywords
+ - Added support for currency and thousand separators
+ 
+-------------------------------------------------
+1.0 Build 17			05/20/2010
+-------------------------------------------------
+ - Fixed issue with DOWHILE loops
+ 
+-------------------------------------------------
+1.0 Build 16			03/09/2010
+-------------------------------------------------
+ - Fixed issue with mathmatic commands
+ - Updated and simplified module support
+ - Added support for arbitrarily named main methods
+ - Added dialog for main method selection if multiple methods are included but none are named Main
+ 
+-------------------------------------------------
+1.0 Build 15			03/08/2010
+-------------------------------------------------
+ - Added ability to read entire file row into two-dimensional array
+ - Improved user prompt message for arrays
+ - Added ability to print entire row of an array with single statement
+
+-------------------------------------------------
+1.0 Build 14			03/07/2010
+-------------------------------------------------
+ - Improved variable handling on the backend
+ - Added support for boolean variables
+ - Cleaned up output file format to be Notepad compatible
+ - Added support for two dimensional arrays
+ - Added support for nested loops
+ - Added Two Dimensional Array example
+ 
+-------------------------------------------------
+1.0 Build 13			03/04/2010
+-------------------------------------------------
+ - Emergency fix for array assignment
+ - Fixed errors in reading last line of data file
+ - Fixed crash on carrage returns on last line
+
+-------------------------------------------------
+1.0 Build 12			03/03/2010
+-------------------------------------------------
+ - Fixed implementation of EOF for data files. Now will read the last line properly
+ - Implemented Array indexing via variables
+ - Updated Expression Tree implementation to accept a callback delegate function for variable retrieval as an alternative to a static Dictionary
+  
+-------------------------------------------------
+1.0 Build 11			02/11/2010
+-------------------------------------------------
+ - Really fixed code highlighting bugs
+ - Fixed editor bug when selecting text and pressing enter.
+ 
+-------------------------------------------------
+1.0 Build 10			02/09/2010
+-------------------------------------------------
+ - Fixed user prompting issue when creating new files
+ - Reading numbers from files now reads as actual numbers instead of text
+ - Added undo/redo capabilities to the editor
+ - Removed text highlighting bug
+ - Added auto-indention based on previous line indentions
+ 
+-------------------------------------------------
+1.0 Build 9			02/02/2010
+-------------------------------------------------
+ - Fixed case sensitivity issue
+ - Fixed endless loop problem when no loop body is present
+ - Fixed compile issues with single words on a line
+ 
+-------------------------------------------------
+1.0 Build 8			01/28/2010
+-------------------------------------------------
+ - Greatly improved compiler errors
+ - Made the User Prompt dialog modal
+ 
+-------------------------------------------------
+1.0 Build 7			01/26/2010
+-------------------------------------------------
+ - Properly handles empty blocks of code
+ - Fixed handling of parenthesis in expressions within decisions
+ 
+-------------------------------------------------
+1.0 Build 6			01/24/2010
+-------------------------------------------------
+ - Created custom Expression Tree parser and implementation which removed dependency on external dlls
+ - Added logical AND, OR and NOT operators in text and symbolic forms
+ - Added support for multiple line IF/THEN or ELSIF/THEN statements
+ - Organized and expanded built in examples
+ 
+-------------------------------------------------
+1.0 Build 5			01/22/2010
+-------------------------------------------------
+ - Fixed bug related to parenthesis in math equations
+ - Added New, Open, Save and Save As buttons to the toolbar
+ 
+-------------------------------------------------
+1.0 Build 4			01/21/2010
+-------------------------------------------------
+ - Added support for arrays
+ - Added support for case statements
+ - Added repeat/until loops and counted loops (do number = 0 to 10)
+ - Improved error messages from mathmatic operation processing
+ - Removed required "for" with prompt statements, not "prompt number" and "prompt for number" are equivalent
+ - No longer allows dashes in variable names (shouldn't have to begin with), fixes subtraction without spaces problem
+ - Prompt dialog now auto focuses in the text box
+ - Implemented dirty flag for code editing
+ - Added "New" button and automatic new file on load
+ 
+-------------------------------------------------
+1.0 Build 3			01/19/2010
+-------------------------------------------------
+ - Added Cut, Copy, Paste buttons
+ - Fixed issues when compiling floating point literals
+ - Fixed error when handling floating point numbers in mathmatic operations
+
+-------------------------------------------------
+1.0 Build 2			01/18/2010
+-------------------------------------------------
+ - Added version number to title bar
+ - Improved About box
+ - Added Keyword input, synonymous with prompt and get combination
+ - Fixed Get command to throw error when used without a prompt command
+ - Created stand alone syntax highlighting control
+ - Added syntax highlighting for keywords and commands
+ - Improved flicker issue on syntax highlighting control
+ - Added options dialog that allows for user selected color schemes
+ 
+-------------------------------------------------
+1.0 Build 1			01/14/2010
+-------------------------------------------------
+ - Arithmetic Assignment operations now work when variables have not been initialized.
+ - Added a User Selectable delay time for the auto step delay
+ - Added the feature to compile and begin the program in the paused state by clicking the Next button instead of the Run button from the Edit Code page
+
+-------------------------------------------------
+1.0 Build 0			01/12/2010
+-------------------------------------------------
+Initial release

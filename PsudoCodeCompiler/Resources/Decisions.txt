@@ -1,0 +1,63 @@
+# Decisions - If / Then / Else 
+#
+# This simple program shows how to make simple logical decisions in your code based on
+# value comparisons of two variables. In any of these structures variables may be replaced
+# with literals if required.
+#
+
+# The Main Program Starts Here
+Main
+	# Set the number variable to an arbitrary value
+	# Change these to anything to test how the code works
+	number = 5
+	other = 5
+	
+	# compare equality
+	if number == 5 then
+		print number, "is equal to", other
+	else
+		print number, "is not equal to", other
+	endif
+	
+	# compare inequality
+	if number != 5 then
+		print number, "is not equal to", other
+	else
+		print number, "is equal to", other
+	endif
+	
+	# another inequality comparison, equivalent to above
+	if number <> 5 then
+		print number, "is not equal to", other
+	else
+		print number, "is equal to", other
+	endif
+	
+	# greater than
+	if number > 5 then
+		print number, "is greater than", other
+	else
+		print number, "is not greater than", other
+	endif
+	
+	# greater than or equal
+	if number >= 5 then
+		print number, "is greater than or equal to", other
+	else
+		print number, "is not greater than or equal to", other
+	endif
+	
+	# less than
+	if number < 5 then
+		print number, "is less than", other
+	else
+		print number, "is not less than", other
+	endif
+	
+	# less than or equal
+	if number <= 5 then
+		print number, "is less than or equal to", other
+	else
+		print number, "is not less than or equal to", other
+	endif
+End

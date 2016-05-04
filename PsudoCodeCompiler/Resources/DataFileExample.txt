@@ -1,0 +1,29 @@
+# Data Files
+#
+# This is an example of working with data files.
+#
+
+# The Main Program Starts Here
+Main
+	
+	read studentID, studentName, studentGPA
+	while not eof
+
+		# determine the letter representation of the GPA
+		if studentGPA >= 4 then
+			letterGPA = 'A'
+		elseif studentGPA >= 3 then
+			letterGPA = 'B'
+		elseif studentGPA >= 2 then
+			letterGPA = 'C'
+		elseif studentGPA >= 1 then
+			letterGPA = 'D'
+		else
+			letterGPA = 'F'
+		endif
+		
+		print studentID, studentName, studentGPA, letterGPA
+		read studentID, studentName, studentGPA
+	endwhile
+	
+End

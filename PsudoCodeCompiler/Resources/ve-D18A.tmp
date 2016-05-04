@@ -1,0 +1,42 @@
+        
+        ***** Revision History *****
+
+-------------------------------------------------
+1.0 Build 4			01/XX/2010
+-------------------------------------------------
+ - Added support for arrays
+ - Added support for case statements
+ - Added repeat/until loops and counted loops (do number = 0 to 10)
+ - Improved error messages from mathmatic operation processing
+ - Removed required "for" with prompt statements, not "prompt number" and "prompt for number" are equivalent
+ 
+-------------------------------------------------
+1.0 Build 3			01/19/2010
+-------------------------------------------------
+ - Added Cut, Copy, Paste buttons
+ - Fixed issues when compiling floating point literals
+ - Fixed error when handling floating point numbers in mathmatic operations
+
+-------------------------------------------------
+1.0 Build 2			01/18/2010
+-------------------------------------------------
+ - Added version number to title bar
+ - Improved About box
+ - Added Keyword input, synonymous with prompt and get combination
+ - Fixed Get command to throw error when used without a prompt command
+ - Created stand alone syntax highlighting control
+ - Added syntax highlighting for keywords and commands
+ - Improved flicker issue on syntax highlighting control
+ - Added options dialog that allows for user selected color schemes
+ 
+-------------------------------------------------
+1.0 Build 1			01/14/2010
+-------------------------------------------------
+ - Arithmetic Assignment operations now work when variables have not been initialized.
+ - Added a User Selectable delay time for the auto step delay
+ - Added the feature to compile and begin the program in the paused state by clicking the Next button instead of the Run button from the Edit Code page
+
+-------------------------------------------------
+1.0 Build 0			01/12/2010
+-------------------------------------------------
+Initial release
